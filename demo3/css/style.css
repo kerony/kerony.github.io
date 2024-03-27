@@ -702,6 +702,7 @@ button {
 
 #map {
      height: 100%;
+     margin-left: 40%;
      min-height: 732px;
 }
 
@@ -709,15 +710,15 @@ button {
      position: absolute;
      z-index: 999;
      background: #fff;
-     padding: 40px 50px;
+     padding: 10px 50px;
      margin-top: 107px;
 }
 
 .main_form .contactus {
      border-bottom: #111111 solid 1px;
-     margin-bottom: 25px;
+     margin-bottom: 1px;
      width: 100%;
-     height: 57px;
+     height: 85px;
      background: transparent;
      color: #4b4b4c;
      font-size: 18px;
