@@ -231,22 +231,27 @@ section {
 }
 
 #kirjaudu_nappi {
-	background-color: #0191f0;
-	border: #0191f0;
+	background-color: #6772e5;
+	border: #6772e5;
 	color: white;
+	height: 25px;
 }
 
 #kirjaudu_ulos_nappi {
-	background-color: #0191f0;
-	border: #0191f0;
+	background-color: #6772e5;
+	border: #6772e5;
 	color: white;
+}
+
+#kirjautumis_lomake {
+	padding: 5px 5px;
 }
 
 /* ==============================================
    4. Hero
 ===============================================*/
 
-#tervetuloa_teksti p {
+#hero #tervetuloa_teksti p {
 	font-weight: bold;
 	font-style: italic;
 	color: #0095f7;
