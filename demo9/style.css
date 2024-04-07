@@ -238,10 +238,10 @@ section {
 }
 
 #kirjaudu_ulos_nappi {
-	background-color: #6772e5;
+	background-color: white;
 	border: #6772e5;
-	color: white;
-	padding: 5px 5px 0px px;
+	color: #6772e5;
+	padding: 10px 0px 0px 15px;
 }
 
 #kirjautumis_lomake {
