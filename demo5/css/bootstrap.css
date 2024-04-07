@@ -198,6 +198,9 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  /* border: cadetblue; */
+  border: #354741;
+  padding: 80px 60px 0px 0px;
 }
 
 svg {
