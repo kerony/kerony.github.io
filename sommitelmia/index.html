@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html lang="fi">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- meta tagit -->
         <meta charset="UTF-8">
         <!--meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"-->
@@ -21,64 +22,63 @@
     <body id="body">
         <!-- navigointi background -->
         <div class="tausta">
-            <div class="nav">
-                <header id="header" class="hoc clear">
-                    <div id="logo" class="fl_left">
-                        <h1><a href="index.html">Mia Maalaa</a></h1>
-                    </div>
-
-                      <!-- Navigointi -->
-
-                    <nav id="mainav" class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
-                        <button class="navbar-nappi" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="icon ion-md-menu"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navigointiMenu">
-                            <div class="laatikko">
-                                <ul class="navbar-nav ml-auto nav-right" vdata-easing="easeInOutExpo" data-speed="1250" data-offset="65">
-                                    <li class="nav-item nav-custom-link">
-                                        <a class="nav-link" href="index.html">Koti <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
-                                    </li>
-                                    <li class="nav-item nav-custom-link">
-                                        <a class="nav-link" href="">Koti2 <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
-                                    </li>
-                                    <li class="nav-item nav-custom-link">
-                                        <a class="nav-link" href="">Koti3 <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
-                                    </li>
-                                    <li class="nav-item nav-custom-link">
-                                        <a class="nav-link" href="">Koti4 <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
-                                    </li>
-                                    <li class="nav-item nav-custom-link">
-                                        <form id="kirjautumis_lomake">
-                                            <input type="text" id="nimi" placeholder="Syötä nimesi" value="" />
-                                            <input type="submit" id="kirjaudu_nappi" value="Kirjaudu sisään" onclick="kirjaudu()" />
-                                        </form>
-                                        <form id="kirjaudu_ulos">
-                                            <input type="submit" id="kirjaudu_ulos_nappi" value="Kirjaudu ulos" onclick="kirjaudu_ulos()" />
-                                        </form>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-
-                        <!-- E N D Navigointi E N D -->
-
-                </header>
-            </div>
             
+            <!-- Navigointi -->
+            <div class="navbar">
+                <h1 class="otsikko fl-center">Mia Maalaa</h1>
+                <ul class="nav fl-right">
+                    <li class="menu" >
+                        <a href="index.html">Koti</a>
+                    </li>
+                    <li class="menu">
+                        <a href="#tapahtumat">Tapahtumat</a>
+                    </li>
+                    <li class="menu">
+                        <a href="#taiteilijat">Taiteilijat</a>
+                    </li>
+                    <li class="menu">
+                        <a href="#tietoa">Tietoa Miasta</a>
+                    </li>
+                    <li class="menu">
+                        <a href="#yhteystiedot">Yhteystiedot</a>
+                    </li>
+                </ul>
+            </div>        
+            <!-- E N D Navigointi E N D -->           
         </div>
-      
-        
+        <!-- E N D navigointi background-->
 
-        
+        <!-- TAPAHTUMAT -->
+        <div class="tapahtumat" id="tapahtumat">
+            <h2 class="valiotsikko">Tapahtumat</h2>
+        </div>
+        <!-- E N D TAPAHTUMAT E N D-->
 
-         <!-- E N D Top backgroung Image Wrapper E N D -->
-        
+        <!-- TAITEILIJAT -->
+        <div class="taiteilijat" id="taiteilijat">
+            <h2 class="valiotsikko">Taiteilijat</h2>
 
-        <!-- Footer -->
+        </div>
+        <!-- E N D TAITEILIJAT E N D -->
 
-        <!-- Footer END -->
+        <!-- TIETOA MIASTA -->
+        <div class="tietoa" id="tietoa">
+            <h2 class="valiotsikko">Tietoa Miasta</h2>
+        </div>
+        <!-- E N D TIETOA MIASTA E N D -->
+
+        <!-- YHTEYSTIEDOT -->
+        <div class="yhteystiedot" id="yhteystiedot">
+            <h2 class="valiotsikko">Yhteystiedot</h2>
+        </div>
+        <!-- E N D YHTEYSTIEDOT E N D -->
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <h2 class="valiotsikko">footer</h2>
+        </div>
+
+        <!-- E N D Footer E N D -->
         
     </dody>
 </html>
