@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8"/>
+    <!-- yläpalkki -->
+    <title>Mia Maalaa</title>
+    <!-- Kuvat -->
+    <link rel="stylesheet" href="kuvia/galleria.jpeg">
+    <!-- stylen mahdollistaminen-->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!-- kirjautuminen -->
+    <script type="text/javascript" language="javascript" src="kirjautuminen.JS"></script>
+
+  </head>
+  <body>
+    <!-- NAVIGOINTI tausta -->
+    <div class="tausta">
+        <!-- NAVIGOINTI -->
+        <div class="nav">
+            <!-- LISTA -->
+            <ul class="lista">    
+                
+                <p id="tervetuloa_teksti">Tervetuloa </p>
+                <li href="index.html" type="btn">
+                    <p>Koti</p>
+                </li>
+                <li>
+                    <p>Taiteilijat</p>
+                </li>
+                <li>
+                    <p>Tapahtumat</p>
+                </li>
+                <li>
+                    <p>Yhteystiedot</p>
+                </li>
+                <!--kirjautuminen -->
+                <li>
+                    <form id="kirjautumis_lomake">
+                        <input type="text" id="nimi" placeholder="Syötä nimesi" value="" />
+                        <input type="submit" id="kirajudu_nappi" value="Kirjaudu sisään" onclick="kirjaudu()" />
+                    </form>
+                    <form id="kirjaudu_ulos">
+                        <input type="submit" id="kirjaudu_ulos_nappi" value="Kirjaudu ulos" onclick="kirjaudu_ulos()" />
+                    </form>
+                </li>
+        <!-- E N D kirjautuminen E N D-->
+            </ul>
+            <!-- E N D LISTA E N D-->
+        </div>
+        <!-- E N D NAVIGOINTI E N D-->
+    </div>
+    <!-- E N D NAVIGOINTI tausta E N D-->
+
+  </body>
+</html>
