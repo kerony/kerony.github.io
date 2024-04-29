@@ -14,18 +14,24 @@
         <!-- mahdollistetaan kirjautuminen -->
         <script type="text/javascript" language="javascript" src="kirjautuminen.JS"></script>
 
+        <!-- FONTIT -->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
         <!-- iconit -->
         <!--link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet"-->
 
-        <title>Mia Maalaa</title>
+        <title>Mia Maalaa - Taide lähemmäksi ihmistä</title>
     </head>
     <body id="body">
         <!-- navigointi background -->
         <div class="tausta">
             
             <!-- Navigointi -->
+            
             <div class="navbar">
-                <h1 class="otsikko fl-center">Mia Maalaa</h1>
+                <header class="logo fl-left">
+                    <h1 class="otsikko">Mia Maalaa</h1>
+                </header>
                 <ul class="nav fl-right">
                     <li class="menu" >
                         <a href="index.html">Koti</a>
@@ -50,33 +56,160 @@
 
         <!-- TAPAHTUMAT -->
         <div class="tapahtumat" id="tapahtumat">
+            <div class="">
             <h2 class="valiotsikko">Tapahtumat</h2>
+            </div>
+            <div>
+                <h4>Ajankohtaista</h4>
+            </div>
+            <div class="rivi1">
+                <div class="kalenteri">
+                    <h4>kalenteri</h4>
+                    <table>
+                        <tr>
+                            <td>        </td>
+                            <td>Tiistai</td>
+                            <td>Keskiviikko</td>
+                            <td>Torstai</td>
+                        </tr>
+                        <tr>
+                            <td>Maalaus</td>
+                            <td>Savi</td>
+                            <td>Piirrustus</td>
+                        </tr>
+                        <tr>
+                            <td>Savi</td>
+                            <td>jotain</td>
+                            <td>jotain</td>
+                        </tr>
+                        <tr>
+                            <td>Piirrustus</td>
+                            <td>jotain</td>
+                            <td>jotain</td>
+                        </tr>
+                        <tr>
+                            <td>Erikois</td>
+                            <td>jotain</td>
+                            <td>jotain</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="näyttelyt_nyt">
+                    <img class="aino" src="kuvat/Aino_Artisaari.webp" alt="Aino Artisaaren kuva">
+                    <h4>Näyttelynä nyt</h4>
+                    <p>Aino Artisaari</p>
+                    <button><a href="aino.html" >Lue lisää</a></button>
+                </div>
+                <div class="poiminta">
+                    <img class="poiminta_kuva" src="kuvat/Kesäyön_kaiku.webp" alt="kesäyö">
+                    <h4>Poiminta valikoimastamme</h4>
+                    <p>Tällä kertaa nostona teosvalikoimastamme on Aino Artisaari<br> öljyvärimaalaus "Kesäyön kaiku"</p>
+                    <button><a href="aino.html" target="_blank">Lue lisää</a></button>
+
+                </div>
+
+            </div>
         </div>
         <!-- E N D TAPAHTUMAT E N D-->
 
         <!-- TAITEILIJAT -->
         <div class="taiteilijat" id="taiteilijat">
-            <h2 class="valiotsikko">Taiteilijat</h2>
-
+            <div class="valiotsikko">
+                <h2 class="valiotsikko">Taiteilijat</h2>
+                <p>Esittelyitä yhteistyötaiteilijoistamme.</p>
+            </div>
+            <div class="rivi2">
+                <div class="taiteilija_vasen">
+                    <div class="kuva_ainosta">
+                        <img class="kuva_aino" src="kuvat/Aino_Artisaari.webp" alt="kuva ainosta">
+                    </div>
+                    <div class="taiteilijan_nimi">
+                        <h4>Aino Artisaari</h4>
+                        <div class="taiteilijan_teksti">
+                            <p>Aino Artisaari on helsinkiläinen kuvataiteilija,<br>
+                                joka on tullut tunnetuksi värikkäistä ja ekspressiivisistä maalauksistaan.</p>
+                            <button><a href="aino.html" target="_blank">Lue lisää</a></button>  
+                        </div>  
+                    </div>
+                </div>
+                <div class="taiteilija_oikea">
+                    <div class="taiteilijan_nimi">
+                        <div class="kuva_leosta">
+                            <img class="kuva_leo" src="kuvat/Leo_Luova.webp" alt="kuva leosta">
+                        </div>
+                        <h4>Leo Luova</h4>
+                        <div class="taiteilijan_teksti">
+                            <p> Leo Luova on turkulainen veistäjä,<br>
+                                jonka päämateriaalina on kierrätetty metalli.</p>
+                            <button><a href="leo.html" target="_blank">Lue lisää</a></button>    
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- E N D TAITEILIJAT E N D -->
 
         <!-- TIETOA MIASTA -->
         <div class="tietoa" id="tietoa">
-            <h2 class="valiotsikko">Tietoa Miasta</h2>
+            <div class="">
+                <h2 class="valiotsikko">Tietoa Miasta</h2>
+
+                <div class="info">
+                    <div class="rivi3">
+                        <div class="kuva_mia">
+                            <img class="mia" src="kuvat/mia.png" alt="Kuva Miasta">
+                        </div>
+                        <div class="teksti_info">
+                        <p>Mia Maalaa on intohimoinen taiteen edistäjä ja visionääri.<br>
+                            Mia on perustanut nimeään kantavan taidegallerian rakkaudestaan taidetta ja kulttuuria kohtaan.<br>
+                            Mia on kotoisin Helsingistä ja hän on opiskellut taidehistoriaa ja kuvataidetta Suomen Taideakatemiassa,<br>
+                            mistä hän valmistui kunnianhimoisena tuomaan uusia tuulia Suomen taidekentälle.</p>
+                            <div class="btn mia_tietoa">
+                                <button type="submit"><a href="Mia.html" target="_blank">Lue lisää</a></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
         </div>
         <!-- E N D TIETOA MIASTA E N D -->
 
         <!-- YHTEYSTIEDOT -->
         <div class="yhteystiedot" id="yhteystiedot">
-            <h2 class="valiotsikko">Yhteystiedot</h2>
+            <div class="">
+                <h2 class="valiotsikko">Yhteystiedot</h2>
+            </div>
+            <div class="jotain">
+                <div class="kartta">
+            <!-- kuva lisätty linkkauksella google mapsiin -->
+                   <a href="https://maps.app.goo.gl/Kt11iEuV2MQHuoEfA" target="_blank"><img class="maps" src="kuvat/googlemaps.PNG" alt="kuva mapsista"></a>
+                </div>
+                <div class="osoite">
+                    <h4>Mia Maalaa</h4>
+                    <p>Osoite:</p>
+                    <p>Keskikatu 3, 04200 Kerava</p>
+                    <p>mia.maalaa@keuda.fi</p>
+                </div>
+                <div class="aukioloajat">
+                    <h6>Aukioloajat</h6>
+                    <p>ti-ke 11.00-17.00</p>
+                    <p>to 11.00-18.00</p>
+                    <p>pe 11.00-17.00</p>
+                    <p>la 11.00-15.00</p>
+                    <p>su-ma suljettu</p>
+                </div>                    
+            </div>
         </div>
         <!-- E N D YHTEYSTIEDOT E N D -->
 
         <!-- FOOTER -->
-        <div class="footer">
-            <h2 class="valiotsikko">footer</h2>
-        </div>
+        <footer id="footer">
+            <div class="">
+                <h2 class="valiotsikko">footer</h2>
+            </div>
+        </footer>
 
         <!-- E N D Footer E N D -->
         
