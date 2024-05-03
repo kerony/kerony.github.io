@@ -72,7 +72,7 @@ p, a {
     background-image: url(kuvat/galleria6.png);
     /* background-repeat: no-repeat; */
     background-size: 100% 100%;
-    width: auto;
+    width: 100%;
     max-width: 100%;
     height: 700px;
 }
@@ -87,6 +87,10 @@ p, a {
     overflow: hidden;
     display: table;
     width: 100%;
+    position: fixed;
+    background-color: #c5ab94;
+    opacity: 0.7;
+    
 }
 
 .navbar ul {
@@ -121,6 +125,7 @@ p, a {
 }
 
 
+
 /* E N D NAVIGOINTI
 -------------------------------------------------------------*/
 
@@ -139,6 +144,14 @@ p, a {
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
+    padding-left: 50px;
+}
+
+.tapahtumat table {
+    border-collapse: collapse;
+    color: black;
+    border-style: solid;
+    border-color: #c5ab94;
 }
 
 .näyttelyt_nyt {
@@ -161,12 +174,25 @@ p, a {
     text-align: center;
 }
 
+.rivi2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .taiteilija_vasen {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.kuva_ainosta .kuva_aino {
+    border-radius: 50%;
+}
+
+.kuva_leosta .kuva_leo {
+    border-radius: 50%;
 }
 
 .taiteilija_oikea {
@@ -210,13 +236,26 @@ p, a {
 --------------------------------------------------------------*/
 
 
-/* YHTEYSTIEDOT
+/* OTA YHTEYTTÄ
 -------------------------------------------------------------*/
-.yhteystiedot .valiotsikko {
+
+
+/* E N D OTA YHTEYTTÄ
+--------------------------------------------------------------*/
+
+
+/* FOOTER
+-------------------------------------------------------------*/
+
+.footer {
+    background-color: #c5ab94;
+}
+
+.footer .valiotsikko {
     text-align: center;
 }
 
-.rivi4 {
+.rivi5 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -228,8 +267,8 @@ p, a {
 }
 
 .maps {
-    height: 250px;
-    width: 300px;
+    height: 85%;
+    width: 85%;
     border-radius: 50%;
     padding-bottom: 16px;
 }
@@ -242,12 +281,30 @@ p, a {
     text-align: center;
 }
 
-/* E N D YHTEYSTIEDOT
---------------------------------------------------------------*/
+/* SOME */
 
+.some .fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
 
-/* FOOTER
--------------------------------------------------------------*/
+.some .fa:hover {
+    opacity: 0.7;
+    background-color: #6f4521;
+  }
+
+.some .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.some .fa-instagram {
+    background: #125688;
+    color: white;
+  }
 
 
 /* E N D FOOTER
