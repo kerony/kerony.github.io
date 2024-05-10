@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="fi">
     <head>
-        <title>Taiteilija - Leo Luova </title>
+        <title>Taiteilija - Aino Artisaari </title>
          <!-- yhditetään css tiedosto -->
          <link rel="stylesheet" href="style.css" type="text/css">
 
           <!-- FONTIT -->
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    
+
         <!-- iconit -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     </head>
     <body id="body">
+
         <div class="">
             <!-- navigointi background -->
                 <div class="tausta">
@@ -23,38 +24,43 @@
                         <header class="logo  col-s-3 col-3">
                             <h1 class="otsikko">Mia Maalaa</h1>
                         </header>
-                        <ul class="nav">
-                            <li class="menu" >
-                                <a href="index.html">Koti</a>
-                            </li>
-                            <li class="menu">
-                                <a href="tapahtumat.html">Tapahtumat</a>
-                            </li>
-                            <li class="menu">
-                                <a href="#taiteilijat">Taiteilijat</a>
-                            </li>
-                            <li class="menu">
-                                <a href="#tietoa">Tietoa Miasta</a>
-                            </li>
-                            <li class="menu">
-                                <a href="#footer">Ota yhteyttä</a>
-                            </li>
-                        </ul>
+                        <div class="nav col-s-8 col-8">
+                            <a href="index.html">Koti</a>                        
+                            <a href="tapahtumat.html">Tapahtumat</a>
+                            <div class="dropdown">
+                                <button class="dropbtn"><a href="#taiteilijat active" class="active">Taiteilijat</a>
+                                    <!--i class=" fa fa-caret-down"></i-->
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="aino.html" class="active">Aino Artisaari</a>
+                                    <a href="leo.html">Leo Luova</a>
+                                </div>
+                            </div>                        
+                            <a href="Mia.html">Tietoa Miasta</a>                        
+                            <a href="#footer">Ota yhteyttä</a>                        
+                        </div>
                     </div>        
                 <!-- E N D Navigointi E N D -->           
                 </div>
             <!-- E N D navigointi background-->
-            </div>
-            
-        <h1>Mia Maalaa - Taidegallerian taiteilija Leo Luova</h1>
-        <p>Leo Luova on turkulainen veistäjä, 
-            jonka päämateriaalina on kierrätetty metalli. 
-            Leo on opiskellut kuvanveistoa Turun Taideakatemiassa ja valmistunut vuonna 2015. 
-            Hän on tunnettu kyvystään luoda kompleksisia, 
-            abstrakteja muotoja yksinkertaisista materiaaleista. 
-            Leolle taide on keino tutkia teollisuuden ja luonnon suhteita, 
-            ja hänen veistoksensa heijastavat sekä mekaanisen että orgaanisen maailman esteettisiä ja toiminnallisia piirteitä.</p>
-            <!-- FOOTER -->
+        </div>
+        
+        <!-- E N D background-->
+
+
+             
+        <div class="col-s-12 col-12">
+            <h1>Mia Maalaa - Taidegallerian taiteilija Aino Artisaari</h1>
+            <p>Aino Artisaari on helsinkiläinen kuvataiteilija, 
+                joka on tullut tunnetuksi värikkäistä ja ekspressiivisistä maalauksistaan. 
+                Aino on valmistunut Kuvataideakatemiasta vuonna 2010, 
+                ja hänen töitään on ollut esillä lukuisissa yksityis- ja ryhmänäyttelyissä sekä kotimaassa että kansainvälisesti. 
+                Ainon taiteessa yhdistyvät moderni abstrakti ilmaisu ja perinteiset tekniikat uudella ja kiehtovalla tavalla. 
+                Hänen teoksensa tutkivat usein ihmisyyden ja luonnon välistä suhdetta, 
+                ja hän käyttää taiteessaan monipuolisesti sekä akryyli- että öljyvärejä.</p>
+        </div>
+
+        <!-- FOOTER -->
         <footer class="footer col-12 col-s-12" id="footer">
             
             <div class="valiotsikko">
@@ -87,9 +93,10 @@
                 </div>                    
             </div>
         
-    </footer>
+        </footer>
 
     <!-- E N D Footer E N D -->
     </body>
+
 
 </html>
