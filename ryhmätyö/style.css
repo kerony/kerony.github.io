@@ -85,7 +85,7 @@ p, a {
 
 
 .tausta {
-    background-image: url(kuvat/galleria6.png);
+    background-image: url(kuvat/taidegalleria.jpg);
     /* background-repeat: no-repeat; */
     background-size: 100% 100%;
     width: 100%;
@@ -220,6 +220,68 @@ background-color: #6f4521;
 display: block;
 }
 
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger .line1,
+.burger .line2,
+.burger .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #6f4521;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    .change .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .change .line2 {
+        opacity: 0;
+    }
+
+    .change .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+
 
 /* E N D NAVIGOINTI
 -------------------------------------------------------------*/
@@ -258,36 +320,18 @@ display: block;
     flex-wrap: wrap;
 }
 
-.kuukausiteksti {
-    text-align: center;
+.erikoistyöpaja {
+    border: 10px solid #c5ab94;
 }
-
-.kalenteri1 {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    flex-wrap: nowrap;
-    padding-left: 50px;
-    width: 100%;
-    align-content: center;
-    justify-content: center;
-}
-
-.tapahtumat table {
-    border-collapse: collapse;
-    color: black;
-    border-style: solid;
-    border-color: #c5ab94;
-    display: table;
-    text-align: center;
-}
-
 .rivi1_alaRivi {
     display: inline-flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    flex-direction: row;
 }
-
+.seuraavatapahtuma {
+    text-align: center;
+}
 .näyttelyt_nyt {
     text-align: center;
 }
@@ -490,51 +534,34 @@ display: block;
 
 /* TAPAHTUMATSIVU */
 
-   
-/* .tapahtumakalenteri {} */
-
-
-.kalenteri2 {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    border: 2px solid #c5ab94;
-  }
-  
-  .otsikko {
-    display: flex;
-    margin-bottom: 10px;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  
-  .paivat {
+#kalenteri {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
-  }
-  
-  .paiva {
-    border: 1px solid #ccc;
-    padding: 10px;
-    border: 2px solid #c5ab94;
-  }
-  
-  .tapahtuma-lomake {
-    max-width: 400px;
-    margin: 20px auto;
-  }
-  
-  .tapahtuma-lomake input[type="date"],
-  .tapahtuma-lomake input[type="text"],
-  .tapahtuma-lomake button {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  .tanaan {
-    border: solid #6f4521;
-  }
+    border-collapse: collapse;
+    border: 1px solid #000;
+    margin: auto;
+}
+
+.num {
+    font-weight: lighter;
+    text-align: center;
+}
+
+#kalenteri div {
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#kalenteri div.tänään {
+    background-color: #c5ab94;
+}
+
+.event {
+    font-weight: normal;
+    font-size: smaller;
+}
 
   /* TAITEILIJAT
   -------------------------------------------------*/

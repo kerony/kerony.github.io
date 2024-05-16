@@ -12,6 +12,7 @@
         <!-- mahdollistetaan kirjautuminen -->
         <!--script type="text/javascript" language="javascript" src="kirjautuminen.JS"></script-->
         <script src="scriptit/script.js"></script>
+        
 
 
         <!-- FONTIT -->
@@ -34,23 +35,58 @@
 
     </head>
     <body id="body">
-        <div class="">
+        <div class="tausta">
+            <div class="navbar col-s-12 col-12" id="navbar">
+                <header class="logo  col-s-3 col-3">
+                    <h1 class="otsikko"><a href="index.html">Mia Maalaa</a></h1>
+                </header>
+                <ul class="nav-links col-s-8 col-8" id="nav-links">
+                    <li><a href="tapahtumat.html">Tapahtumat</a></li>
+                    <li class="dropdown">
+                        <a href="#taiteilijat">Taiteilijat</a>
+                        <div class="dropdown-content">
+                            <a href="aino.html">Aino Artisaari</a>
+                            <a href="leo.html">Leo Luova</a>
+                        </div>
+                    </li>
+                    <li><a href="Mia.html">Tietoa Miasta</a></li>
+                    <li><a href="otaYhteyttä.html">Ota yhteyttä</a></li>
+                </ul>
+                <div class="burger" id="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+            <script>
+                // Get the hamburger icon and navigation links
+                const burger = document.getElementById('burger');
+                const navLinks = document.getElementById('nav-links');
+
+                // Add click event listener to the hamburger icon
+                burger.addEventListener('click', () => {
+                    // Toggle the 'active' class on the navigation links
+                    navLinks.classList.toggle('active');
+                });
+            </script>
+        </div>
+        
         <!-- navigointi background -->
-            <div class="tausta">
+            <!--div class="tausta">
                 
             
-            <!-- Navigointi -->
+            <Navigointi>
             
                 <div class="navbar col-s-12 col-12" id="navbar">
                     <header class="logo  col-s-3 col-3">
                         <h1 class="otsikko"><a href="index.html">Mia Maalaa</a></h1>
                     </header>
-                        <div class="nav col-s-8 col-8">
-                        <!--a href="index.html" class="active">Koti</a-->   
+                        <div class="nav col-s-8 col-8" id="nav">
+                        <a href="index.html" class="active">Koti</a>   
                         <a href="tapahtumat.html">Tapahtumat</a>
                         <div class="dropdown">
                             <button class="dropbtn"><a href="#taiteilijat">Taiteilijat</a>
-                                <!--i class=" fa fa-caret-down"></i-->
+                                <i class=" fa fa-caret-down"></i>
                             </button>
                             <div class="dropdown-content">
                                 <a href="aino.html">Aino Artisaari</a>
@@ -60,11 +96,16 @@
                         <a href="Mia.html">Tietoa Miasta</a>                    
                         <a href="otaYhteyttä.html">Ota yhteyttä</a>                        
                     </div>
+                    <div class="burger" id="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
                 </div>        
-            <!-- E N D Navigointi E N D -->           
-            </div>
+            <E N D Navigointi E N D >           
+            </div-->
         <!-- E N D navigointi background-->
-        </div>
+        
         <!-- Paluu sivun ylös-nappula-->
         <button id="scrollBtn" onclick="scrollToTop()" class="ylösnappi" href="#navbar">Ylös</button>
             <script>
@@ -91,59 +132,18 @@
                 <div class="alaotsikko">
                     <h4>Ajankohtaista</h4>
                 </div>
-                <div class="rivi1 col-s-12 col-12">
-                    <div class="kalenteri1 col-s-4 col-4">
-                    <h3 class="kuukausiteksti" style="color: #b99a7f;">Toukokuu 2024</h3>
-                        <table cellspacing="5" cellpadding="10">
-                            <tr>
-                                <!--th style="background: #c5ab94;">maanantai</th-->
-                                <th style="background: #c5ab94;">Ti</th>
-                                <th style="background: #c5ab94;">Ke</th>
-                                <th style="background: #c5ab94;">To</th>
-                                <th style="background: #c5ab94;">Pe</th>
-                                <th style="background: #c5ab94;">La</th>
-                                <!--th style="background: #c5ab94;">Sunnuntai</th-->
-                            </tr>
-                            <tr>
-                                <!--td>Suljettu</td-->
-                                <td>Maalaus</td>
-                                <td>Savi</td>
-                                <td>Piirrustus</td>
-                                <td>Jotain</td>
-                                <td>jotain</td>
-                                <!--td>Suljettu</td-->
-                            </tr>
-                            <tr>
-                               <!--td>Suljettu</td-->
-                                <td>Savi</td>
-                                <td>jotain</td>
-                                <td>jotain</td>
-                                <td>jotain</td>
-                                <td>jotain</td>
-                                <!--td>Suljettu</td-->
-                            </tr>
-                            <tr>
-                                <!--td>Suljettu</td-->
-                                <td>Piirrustus</td>
-                                <td>jotain</td>
-                                <td>jotain</td>
-                                <td>jotain</td>
-                                <td>jotain</td>
-                                <!--td>Suljettu</td-->
-                            </tr>
-                            <tr>
-                                <!--td>Suljettu</td-->
-                                <td>Erikois</td>
-                                <td>jotain</td>
-                                <td>jotain</td>
-                                <td>jotain</td>
-                                <td>jotain</td>
-                                <!--td>Suljettu</td-->
-                            </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="rivi1_alaRivi col-8 col-s-8">              
+                    <div class="rivi1_alaRivi col-12 col-s-12"> 
+                        <div class="seuraavatapahtuma col-4 col-s-4" id="seuraavatapahtuma">
+                            <img class="erikoistyöpaja" src="kuvat/Erikoistyöpajat.webp" alt="erikoistyöpaja" width="220" height="300">
+                            <h4>Seuraava tapahtuma</h4>
+                            <p>Erikoistyöpaja <b>15.00.</b><br><br> <b>Kollaasityöpaja:</b> Yhdistellään eri materiaaleja ja tekniikoita
+                                 luodakseen visuaalisesti stimuloivia kollaaseja.<br><br>
+                                <b>Valokuvauksen perusteet:</b> Opitaan perustiedot valokuvauksesta, mukaan lukien
+                                 kameran asetukset, sommittelu ja valon käyttö.</p>
+                            <p class="seuraavatapahtuma" id="seuraavaTapahtuma"></p>
+                            <script src="scriptit/kalenteri.js"></script>
+                            <button class="btn"><a href="tapahtumat.html" >Lue lisää</a></button>
+                        </div>             
                         <div class="näyttelyt_nyt col-s-4 col-4">
                             <img class="aino" src="kuvat/Aino_Artisaari.webp" alt="Aino Artisaaren kuva" width="220" height="300">
                             <h4>Näyttelynä nyt</h4>
@@ -151,13 +151,12 @@
                             <button class="btn"><a href="aino.html" >Lue lisää</a></button>
                         </div>
                         <div class="poiminta col-s-4 col-4">
-                            <img class="poiminta_kuva" src="kuvat/Kesäyön_kaiku.webp" alt="kesäyö" width="250" height="250">
+                            <img class="poiminta_kuva" src="kuvat/Kesäyön_kaiku.webp" alt="kesäyö" width="220" height="300">
                             <h4>Poiminta valikoimastamme</h4>
                             <p>Tällä kertaa nostona teosvalikoimastamme on Aino Artisaari<br> öljyvärimaalaus "Kesäyön kaiku"</p>
                             <button class="btn"><a href="aino.html">Lue lisää</a></button>
                         </div>
-                    </div> 
-                </div>            
+                    </div>             
         </section>
         <!-- E N D TAPAHTUMAT E N D-->
 
@@ -176,7 +175,7 @@
                             <div class="taiteilijan_nimi">
                                 <h4>Aino Artisaari</h4>
                                 <div class="taiteilijan_teksti">
-                                    <p>Aino Artisaari on helsinkiläinen kuvataiteilija,<br>
+                                    <p><b>Aino Artisaari</b> on helsinkiläinen kuvataiteilija,<br>
                                         joka on tullut tunnetuksi värikkäistä ja ekspressiivisistä maalauksistaan.</p>
                                     <button class="btn"><a href="aino.html">Lue lisää</a></button>  
                                 </div>
@@ -190,7 +189,7 @@
                             </div>
                             <h4>Leo Luova</h4>
                             <div class="taiteilijan_teksti">
-                                <p>Leo Luova on turkulainen veistäjä,<br>
+                                <p><b>Leo Luova</b> on turkulainen veistäjä,<br>
                                     jonka päämateriaalina on kierrätetty metalli.</p>
                                 <button class="btn"><a href="leo.html">Lue lisää</a></button>    
                             </div>
@@ -211,7 +210,7 @@
                                 <img class="mia" src="kuvat/mia.png" alt="Kuva Miasta">
                             </div>
                             <div class="teksti_info col-s-6 col-s-6">
-                            <p>Mia Maalaa on intohimoinen taiteen edistäjä ja visionääri.<br>
+                            <p><b>Mia Maalaa</b> on intohimoinen taiteen edistäjä ja visionääri.<br>
                                 Mia on perustanut nimeään kantavan taidegallerian rakkaudestaan taidetta ja kulttuuria kohtaan.<br>
                                 Mia on kotoisin Helsingistä ja hän on opiskellut taidehistoriaa ja kuvataidetta Suomen Taideakatemiassa,<br>
                                 mistä hän valmistui kunnianhimoisena tuomaan uusia tuulia Suomen taidekentälle.</p>
